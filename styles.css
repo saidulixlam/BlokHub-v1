@@ -1,0 +1,234 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    display: flex;
+    height:100vh;
+    margin-top: 10px;
+    padding-bottom: 20px;
+    padding-inline: 10px;
+    border-radius: 4px;
+
+}
+    
+
+/* Sidebar Styles */
+.sidebar {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+   
+    width: 250px;
+    background-color: #f0f0f0;
+    padding: 10px;
+    border: whitesmoke;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    margin-right: 10px;
+}
+.sidebar.collapsed {
+    display: none;
+}
+
+#expandButton {
+    display: none;
+    position: absolute;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    top: 30px; /* Adjust the top position as needed */
+    left:25px; /* Adjust the left position as needed */
+    margin-left: 0;
+}
+
+.container.collapsed #expandButton {
+    display: inline-block;
+}
+
+.container.collapsed .content {
+    display: none;
+}
+
+/* Brand Section Styles */
+.brand-section {
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.brand-section img {
+    max-width: 100px; /* Adjust the max-width as needed */
+    border-radius: 50%;
+}
+
+.brand-section p {
+    margin-top: 10px;
+    font-weight: bold;
+}
+.brand-name{
+    display: flex;
+    align-items: center;
+}
+
+/* Teams Section Styles */
+.teams-section p {
+    margin-bottom: 10px;
+}
+
+/* Folder Section Styles */
+.folder{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: #6c757d;
+}
+.folder-item{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.folder-section p {
+    margin-bottom: 10px;
+}
+
+.folder-section h4 {
+    color: #828a91;
+    margin-bottom: 10px;
+}
+
+/* Bottom Section Styles */
+.bottom-section {
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 1px solid black;
+    padding-top: 10px;
+    margin-top: auto; /* Push to the bottom */
+}
+.bottom-section button {
+    /* width: 100%; */
+    padding: 6px;
+    background-color: #4285f4; /* Adjust the color as needed */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+.right-section {
+    border: 1px solid saddlebrown;
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 8px;
+    border: whitesmoke;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    overflow-x: auto;
+    /* Add more styling for the right section if needed */
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    background-color: rgb(243, 239, 239);
+    border-radius: 4px;
+    color: #080505; /* Add your desired text color */
+}
+
+.app-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.search-icon,
+.settings-icon {
+    font-size: 18px;
+    cursor: pointer;
+}
+
+.filtering {
+    display: flex;
+    align-items: center;
+}
+
+input[type="text"],
+button {
+    margin: 5px;
+    padding: 8px 12px;
+    border: none;
+    cursor: pointer;
+}
+
+button {
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #f0f0f0; /* Change to your desired hover background color */
+}
+
+.company-table {
+    max-width: 100%;
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.company-table td {
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.company-table th {
+    border-radius: 2px;
+    border: 1px solid #ddd;
+    padding-inline: 4px;
+    color: #2b2a2a5c;
+    text-align: center;
+    line-height: 10px;
+}
+
+.add-button, .select-brand {
+   
+    border: none;
+    color: rgb(24, 19, 19);
+    padding: 2px 2px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.add-button:hover, .select-brand:hover {
+    background-color: #45a049; /* Darker green */
+}
+
+.options {
+    width: 100%;
+    margin-top: auto;
+    margin-bottom: 10px;
+    text-align: center;
+    display: flex;
+    align-self: baseline;
+    align-items: center;
+    justify-content: center;
+    padding-top: 10px;
+    
+}
